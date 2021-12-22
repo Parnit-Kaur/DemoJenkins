@@ -15,8 +15,8 @@ class MyTestCase(unittest.TestCase):
     def test_add1(self):
         self.cal.a = 4
         self.cal.b = -1
-        self.assertFalse( self.cal.add(), 3)
-        #self.assertEqual(self.cal.add(), 3)
+        #self.assertFalse( self.cal.add(), 3)
+        self.assertEqual(self.cal.add(), 3)
 
     def test_add2(self):
         self.cal.a = -5
